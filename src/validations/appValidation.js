@@ -47,14 +47,27 @@ const validate=(inputControlObj)=>{
 }
 }
 //methods
-export const fnFieldValidation=(name,value,inputControlls)=>{  //test the testbox userid,pwd data
+export const fnFieldValidation=(eve,inputControlls)=>{  //test the testbox userid,pwd data
+  
+  const {name,value,type,checked}=eve.target;
   const clonedInputControlls=JSON.parse(JSON.stringify(inputControlls))
   const inputControlObj=clonedInputControlls.find((obj)=>{
     return obj.name===name
   })
   inputControlObj.errMsg="";
-  inputControlObj.value=value;
-validate(inputControlObj);
+  if(type === 'checkbox'){
+    const checkedValues = inputControlObj.value ? inputControlObj.value.split(",") : [];
+    if (checked){
+      checkedValues.push(value)
+    }else{
+      const index = checkedValues.indexOf(value);
+      checkedValues.splice(index,1);
+    }
+    inputControlObj.value= checkedValues.join(',')
+    }else{
+    inputControlObj.value = value;
+  }
+  validate(inputControlObj);
 return clonedInputControlls;
 }
 export const fnFormValidation=(inputControlls)=>{  //test the entire form 

@@ -15,8 +15,7 @@ const Login = () => {
     alert("send request")
   }
   const fnChange = (eve) => {
-  const { name, value } = eve.target;
-  const updatedInputControlls = fnFieldValidation(name,value,inputControlls)
+  const updatedInputControlls = fnFieldValidation(eve,inputControlls)
   setInputControlls(updatedInputControlls)
     }
   return ( 
