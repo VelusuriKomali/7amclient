@@ -1,10 +1,5 @@
-import Image from 'next/image'
-import styles from './page.module.css'
 
-export default function Home() {
-  return(
-    <div>
-      Home
-    </div>
-  )
-}
+import Home from './home/page'
+import Login from './login/page'
+
+export default Login

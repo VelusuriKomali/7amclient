@@ -1,5 +1,5 @@
 export const init = {
- isLoggedIn : true,
- isShowLoader : false,
+   isLoggedIn : false,
+   isShowLoader : false,
  user : {}
 }

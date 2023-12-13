@@ -82,11 +82,11 @@ export const fnFormValidation=(inputControlls)=>{  //test the entire form
   })
   return[isFormInValid, dataObj,clonedInputControlls]
 }
-export const Reset=(inputControlls)=>{   //some times to reset the values
+export const fnReset=(inputControlls)=>{   //some times to reset the values
     const clonedInputControlls=JSON.parse(JSON.stringify(inputControlls));
     clonedInputControlls.forEach((inputControlObj) => {
    inputControlObj.errMsg="";
    inputControlObj.value="";
     })
-    return clonedInputControlls
+    return clonedInputControlls;
 }

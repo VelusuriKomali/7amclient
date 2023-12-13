@@ -4,7 +4,7 @@
        "type":"text",
        "errorMsg":"",
        "name":"full name",
-       "value":"fn",
+       "value":" ",
        "criteria":[
           "Required"
        ]
@@ -14,7 +14,7 @@
         "type":"text",
         "errorMsg":"",
         "name":"uid",
-        "value":"kom@gmail.com",
+        "value":" ",
         "criteria":[
            "Required",
            "EmailFormat"
@@ -25,7 +25,7 @@
         "type":"password",
         "errorMsg":"",
         "name":"pwd",
-        "value":"123456",
+        "value":" ",
         "criteria":[
            "Required",
            "Min5Chars"
@@ -36,7 +36,7 @@
         "type":"number",
         "errorMsg":"",
         "name":"phone",
-        "value":"1234567890",
+        "value":" ",
         "criteria":[
            "Required"
         ]
@@ -46,7 +46,7 @@
         "type":"radio",
         "errorMsg":"",
         "name":"gender",
-        "value":"F",
+        "value":" ",
         "criteria":[
            "Required"
         ],
@@ -58,7 +58,7 @@
         "type":"checkbox",
         "errorMsg":"",
         "name":"hobbies",
-        "value":"cric",
+        "value":" ",
         "criteria":[
            "Required"
         ],
@@ -70,7 +70,7 @@
         "tag":"select",
         "errorMsg":"", 
         "name":"country",
-        "value":"us",
+        "value":" ",
         "criteria":[
            "Required"
         ],
@@ -82,7 +82,7 @@
         "tag":"textarea",
         "errorMsg":"",
         "name":"address",
-        "value":"addddd",
+        "value":" ",
         "criteria":[
            "Required"
         ]
